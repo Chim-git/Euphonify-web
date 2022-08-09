@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>euphonify music</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="imageseuphonify/logo.png.png" class="logo" />
+        <ul>
+          <li>
+            <a href="file:///C:/Users/Rude%20Boy/Desktop/euphonify/index.html">
+              HOME
+            </a>
+          </li>
+          <li><a href="About.html">ABOUT</a></li>
+          <li><a href="#">SPECIFICATION</a></li>
+          <li><a href="genre.html">GENRE</a></li>
+          <li>
+            <a href="mailto:maduabuchichimdalus@gmail.com" target="_blank">
+              CONNECT
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="left-col">
+          <h1>
+            THE
+            <br />
+            REAL
+            <br />
+            EUPHONY
+          </h1>
+        </div>
+        <div class="right-col">
+          <p>Click Here To Listen</p>
+          <img src="./imageseuphonify/play.png" id="icon" />
+        </div>
+      </div>
+    </div>
+
+    <audio id="myalbum">
+      <source
+        src="./music.euphonify/Anne-Marie_&_James_Arthur_-_Rewrite_The_Stars_[from_The_Greatest_Showman__Reimagined](256k).mp3"
+        type="audio/mp3"
+      />
+    </audio>
+
+    <script>
+      var myalbum = document.getElementById('myalbum')
+      var icon = document.getElementById('icon')
+
+      icon.onclick = function () {
+        if (myalbum.paused) {
+          myalbum.play()
+          icon.src = './imageseuphonify/pause.png'
+        } else {
+          myalbum.pause()
+          icon.src = './imageseuphonify/play.png'
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.box{align-items: center;
+     height: 100vh;
+    width: 100%;
+    background-image: url(./imageseuphonify/totte-annerbrink-NehdOHCXsjs-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;}
+    .about{
+        width: 88%;
+        margin: auto;
+        padding: 15px 0;
+        display: flex;
+        align-items: center; 
+        justify-content: space-between;}
+  .logo{
+    width: 140px;
+    cursor: pointer;
+}
+
+.about ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.about ul li a{
+    text-decoration: none;
+    color: deeppink;
+    font-size: 15px;
+}
+
+.left-col{
+    margin-left: 6%;
+ }
+
+ .left-col h1{
+    font-size: 85px;
+    color: deeppink;
+    line-height: 85px;
+    float: left;
+ }
+ .left-col h2{
+    font-size: 16px;
+    color: deeppink;
+    line-height: 20px;
+    float: left;}

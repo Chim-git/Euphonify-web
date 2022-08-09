@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>euphonify music</title>
+    <link rel="stylesheet" href="country.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="imageseuphonify/logo.png.png" class="logo" />
+        <ul>
+          <li>
+            <a href="file:///C:/Users/Rude%20Boy/Desktop/euphonify/index.html">
+              HOME
+            </a>
+          </li>
+          <li><a href="hiphop.html">Hiphop/pop</a></li>
+          <li><a href="country.html">Country</a></li>
+          <li><a href="rap.html">Rap/Trap</a></li>
+          <li><a href="jazz.html">Cool Jazz</a></li>
+          <li><a href="Christain.html">Christain</a></li>
+          <li><a href="drill.html">Drill</a></li>
+          <li><a href="birthday.html">Birthday</a></li>
+          <li><a href="worship.html">Worship</a></li>
+          <li><a href="christmas.html">Christmas</a></li>
+          <li><a href="rockandroll.html">Rock and Roll</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="left-col">
+          <h1>
+            <br />
+            COUNTRY
+
+            <br />
+          </h1>
+        </div>
+        <div class="right-col">
+          <p>Start Listening</p>
+          <img src="./imageseuphonify/play.png" id="icon" />
+        </div>
+      </div>
+    </div>
+
+    <audio id="myalbum">
+      <source
+        src="./music.euphonify/Bebe_Rexha_-_Meant_to_Be_(feat._Florida_Georgia_Line)_[Official_Music_Video](256k).mp3"
+        type="audio/mp3"
+      />
+    </audio>
+
+    <script>
+      var myalbum = document.getElementById('myalbum')
+      var icon = document.getElementById('icon')
+
+      icon.onclick = function () {
+        if (myalbum.paused) {
+          myalbum.play()
+          icon.src = './imageseuphonify/pause.png'
+        } else {
+          myalbum.pause()
+          icon.src = './imageseuphonify/play.png'
+        }
+      }
+    </script>
+  </body>
+</html>

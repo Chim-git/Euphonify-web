@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>euphonify music</title>
+    <link rel="stylesheet" href="justin.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="imageseuphonify/logo.png.png" class="logo" />
+        <ul>
+          <li>
+            <a href="file:///C:/Users/Rude%20Boy/Desktop/euphonify/index.html">
+              HOME
+            </a>
+          </li>
+          <li><a href="anyone.html">Anyone</a></li>
+          <li><a href="lifetime.html">Life time</a></li>
+          <li><a href="yummy.html">Yummy</a></li>
+          <li>
+            <a href="jazz.html"></a>
+            Despacito
+          </li>
+          <li><a href="ghost.html">Ghost</a></li>
+          <li><a href="hailey.html">Hailey</a></li>
+          <li><a href="intentions.html">Intentions</a></li>
+          <li><a href="lovedby.html">Loved by you</a></li>
+          <li><a href="loveyourself.html">Love youself</a></li>
+          <li><a href="loveyou.html">Love you different</a></li>
+          <li><a href="sorry.html">Sorry</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="left-col">
+          <h1>
+            <br />
+            JUSTIN BIEBER
+
+            <br />
+          </h1>
+        </div>
+        <div class="right-col">
+          <p>Start Listening</p>
+          <img src="./imageseuphonify/play.png" id="icon" />
+        </div>
+      </div>
+    </div>
+
+    <audio id="myalbum">
+      <source
+        src="./music.euphonify/Justin_Bieber_-_Ghost(256k).mp3"
+        type="audio/mp3"
+      />
+    </audio>
+
+    <script>
+      var myalbum = document.getElementById('myalbum')
+      var icon = document.getElementById('icon')
+
+      icon.onclick = function () {
+        if (myalbum.paused) {
+          myalbum.play()
+          icon.src = './imageseuphonify/pause.png'
+        } else {
+          myalbum.pause()
+          icon.src = './imageseuphonify/play.png'
+        }
+      }
+    </script>
+  </body>
+</html>
